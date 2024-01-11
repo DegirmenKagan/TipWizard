@@ -208,10 +208,68 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="-27.464788732394368"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="r6W-cf-8JG">
+            <objects>
+                <viewController id="XjN-XI-5eF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aj2-lg-wWq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ckd-UI-3xp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Per Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCx-Lw-XjO">
+                                        <rect key="frame" x="0.0" y="132" width="393" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="j7X-Bg-196"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43.75" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIi-sD-0vV">
+                                        <rect key="frame" x="0.0" y="168" width="393" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="09I-sd-vUf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                        <color key="textColor" red="0.3204391888" green="0.66026717479999997" blue="0.43165052199999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JCx-Lw-XjO" firstAttribute="centerY" secondItem="Ckd-UI-3xp" secondAttribute="centerY" id="14J-Te-GZ0"/>
+                                    <constraint firstAttribute="height" constant="300" id="8g7-Uy-cnG"/>
+                                    <constraint firstItem="JCx-Lw-XjO" firstAttribute="leading" secondItem="Ckd-UI-3xp" secondAttribute="leading" id="AgH-LB-nTQ"/>
+                                    <constraint firstItem="wIi-sD-0vV" firstAttribute="leading" secondItem="Ckd-UI-3xp" secondAttribute="leading" id="Ser-Q3-fLl"/>
+                                    <constraint firstAttribute="trailing" secondItem="wIi-sD-0vV" secondAttribute="trailing" id="WOq-uv-jd4"/>
+                                    <constraint firstItem="wIi-sD-0vV" firstAttribute="top" secondItem="JCx-Lw-XjO" secondAttribute="bottom" id="mb4-CJ-x6F"/>
+                                    <constraint firstAttribute="trailing" secondItem="JCx-Lw-XjO" secondAttribute="trailing" id="rft-3C-e3X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0x3-ST-bsl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ckd-UI-3xp" firstAttribute="top" secondItem="aj2-lg-wWq" secondAttribute="top" id="DV5-xD-83V"/>
+                            <constraint firstItem="Ckd-UI-3xp" firstAttribute="leading" secondItem="aj2-lg-wWq" secondAttribute="leading" id="LJc-n2-rvm"/>
+                            <constraint firstItem="Ckd-UI-3xp" firstAttribute="trailing" secondItem="0x3-ST-bsl" secondAttribute="trailing" id="jsD-XA-foU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHv-Ch-9cN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849.61832061068696" y="-27.464788732394368"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

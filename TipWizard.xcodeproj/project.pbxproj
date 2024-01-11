@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4CC6E52B50684B009A8290 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CC6E42B50684B009A8290 /* ResultsViewController.swift */; };
 		3DF0976A2B4AF8250048A9C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF097692B4AF8250048A9C3 /* AppDelegate.swift */; };
 		3DF0976C2B4AF8250048A9C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0976B2B4AF8250048A9C3 /* SceneDelegate.swift */; };
 		3DF0976E2B4AF8250048A9C3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF0976D2B4AF8250048A9C3 /* CalculatorViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4CC6E42B50684B009A8290 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		3DF097662B4AF8250048A9C3 /* TipWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF097692B4AF8250048A9C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF0976B2B4AF8250048A9C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D4CC6E62B506855009A8290 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0976D2B4AF8250048A9C3 /* CalculatorViewController.swift */,
+				3D4CC6E42B50684B009A8290 /* ResultsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3DF0975D2B4AF8250048A9C3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +69,7 @@
 			children = (
 				3DF097692B4AF8250048A9C3 /* AppDelegate.swift */,
 				3DF0976B2B4AF8250048A9C3 /* SceneDelegate.swift */,
-				3DF0976D2B4AF8250048A9C3 /* CalculatorViewController.swift */,
+				3D4CC6E62B506855009A8290 /* Controllers */,
 				3DF0976F2B4AF8250048A9C3 /* Main.storyboard */,
 				3DF097722B4AF8260048A9C3 /* Assets.xcassets */,
 				3DF097742B4AF8260048A9C3 /* LaunchScreen.storyboard */,
@@ -141,6 +152,7 @@
 				3DF0976E2B4AF8250048A9C3 /* CalculatorViewController.swift in Sources */,
 				3DF0976A2B4AF8250048A9C3 /* AppDelegate.swift in Sources */,
 				3DF0976C2B4AF8250048A9C3 /* SceneDelegate.swift in Sources */,
+				3D4CC6E52B50684B009A8290 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
