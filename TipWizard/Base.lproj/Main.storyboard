@@ -42,6 +42,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="ELo-me-uRx"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <color key="tintColor" red="0.2823529541" green="0.62352943419999995" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" red="0.0" green="0.5" blue="0.055380409705169109" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -71,6 +72,7 @@
                                                             <constraint firstAttribute="height" constant="54" id="fq8-Zv-vae"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <color key="tintColor" red="0.2823529541" green="0.62352943419999995" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="20%">
                                                             <color key="titleColor" red="0.0" green="0.5" blue="0.055380409710000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -106,7 +108,7 @@
                                                         <color key="textColor" red="0.057612519940000002" green="0.59167850379999998" blue="0.1742649309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-Lw-T6G">
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ej2-Lw-T6G">
                                                         <rect key="frame" x="120" y="0.0" width="93" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="JSb-JR-1Sz"/>
@@ -208,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="r6W-cf-8JG">
             <objects>
-                <viewController id="XjN-XI-5eF" sceneMemberID="viewController">
+                <viewController id="XjN-XI-5eF" customClass="ResultsViewController" customModule="TipWizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aj2-lg-wWq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +263,9 @@
                                 <state key="normal" title="Recalculate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="XjN-XI-5eF" eventType="touchUpInside" id="Gzc-gY-Fcw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 3 people, with 20% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-dM-KSG">
                                 <rect key="frame" x="50" y="305" width="293" height="117"/>
@@ -285,6 +290,10 @@
                             <constraint firstItem="krZ-Q4-Ppe" firstAttribute="bottom" secondItem="0x3-ST-bsl" secondAttribute="bottom" id="nW2-P5-qr5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="settingsLabel" destination="RVU-dM-KSG" id="Kb6-1N-alv"/>
+                        <outlet property="totalLabel" destination="wIi-sD-0vV" id="Edd-iR-fBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHv-Ch-9cN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
